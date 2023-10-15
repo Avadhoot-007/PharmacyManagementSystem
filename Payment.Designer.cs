@@ -74,9 +74,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(333, 9);
+            this.label2.Location = new System.Drawing.Point(342, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(443, 52);
+            this.label2.Size = new System.Drawing.Size(439, 51);
             this.label2.TabIndex = 3;
             this.label2.Text = "Payment Information";
             // 
@@ -241,11 +241,11 @@
             // DGV_payment
             // 
             this.DGV_payment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_payment.Location = new System.Drawing.Point(225, 395);
+            this.DGV_payment.Location = new System.Drawing.Point(214, 395);
             this.DGV_payment.Name = "DGV_payment";
             this.DGV_payment.RowHeadersWidth = 51;
             this.DGV_payment.RowTemplate.Height = 24;
-            this.DGV_payment.Size = new System.Drawing.Size(645, 183);
+            this.DGV_payment.Size = new System.Drawing.Size(805, 183);
             this.DGV_payment.TabIndex = 26;
             // 
             // label7
@@ -351,7 +351,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1138, 590);
+            this.ClientSize = new System.Drawing.Size(1121, 594);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);

@@ -128,7 +128,7 @@ namespace PharmacyManagementSystem
         private void Update_btn_Click(object sender, EventArgs e)
         {
             string query = "UPDATE EmployeeTb SET Ename=@ename, Address=@address, Mobno=@mobile, Email=@email_Id, Jobrole=@job_Role, Salary=@salary " +
-       "WHERE EmpiD=@id";
+            "WHERE EmpiD=@id";
 
             cmd = new OleDbCommand(query, conn);
             cmd.Parameters.AddWithValue("@ename", Empname_tb.Text);
@@ -160,6 +160,12 @@ namespace PharmacyManagementSystem
             Salary_tb.Clear();
             Empid_tb.Focus();
 
+        }
+
+        private void Print_btn_Click(object sender, EventArgs e)
+        {
+            ReportGeneration reportGeneration = new ReportGeneration();
+            reportGeneration.Show();
         }
     }
 }

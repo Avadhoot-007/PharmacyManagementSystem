@@ -76,9 +76,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(97, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 36);
+            this.label2.Size = new System.Drawing.Size(190, 36);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Emp_id";
+            this.label2.Text = "Employee Id";
             // 
             // label3
             // 
@@ -86,9 +86,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(372, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 36);
+            this.label3.Size = new System.Drawing.Size(244, 36);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Emp_Name";
+            this.label3.Text = "Employee Name";
             // 
             // label4
             // 
@@ -106,9 +106,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(928, 84);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 36);
+            this.label5.Size = new System.Drawing.Size(160, 36);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Mob_No";
+            this.label5.Text = "Mobile No";
             // 
             // label6
             // 
@@ -116,9 +116,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(787, 187);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 36);
+            this.label6.Size = new System.Drawing.Size(129, 36);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Email_id";
+            this.label6.Text = "Email Id";
             // 
             // label7
             // 
@@ -126,9 +126,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(254, 187);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 36);
+            this.label7.Size = new System.Drawing.Size(142, 36);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Job_Role";
+            this.label7.Text = "Job Role";
             // 
             // label8
             // 
@@ -143,7 +143,7 @@
             // Empid_tb
             // 
             this.Empid_tb.Enabled = false;
-            this.Empid_tb.Location = new System.Drawing.Point(103, 139);
+            this.Empid_tb.Location = new System.Drawing.Point(107, 139);
             this.Empid_tb.Name = "Empid_tb";
             this.Empid_tb.Size = new System.Drawing.Size(141, 22);
             this.Empid_tb.TabIndex = 8;
@@ -206,7 +206,7 @@
             this.Insert_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Insert_btn.Location = new System.Drawing.Point(23, 385);
             this.Insert_btn.Name = "Insert_btn";
-            this.Insert_btn.Size = new System.Drawing.Size(167, 42);
+            this.Insert_btn.Size = new System.Drawing.Size(167, 50);
             this.Insert_btn.TabIndex = 16;
             this.Insert_btn.Text = "Insert";
             this.Insert_btn.UseVisualStyleBackColor = true;
@@ -217,7 +217,7 @@
             this.Update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Update_btn.Location = new System.Drawing.Point(211, 385);
             this.Update_btn.Name = "Update_btn";
-            this.Update_btn.Size = new System.Drawing.Size(167, 42);
+            this.Update_btn.Size = new System.Drawing.Size(185, 50);
             this.Update_btn.TabIndex = 17;
             this.Update_btn.Text = "Update";
             this.Update_btn.UseVisualStyleBackColor = true;
@@ -225,13 +225,14 @@
             // 
             // Print_btn
             // 
-            this.Print_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Print_btn.Location = new System.Drawing.Point(211, 463);
+            this.Print_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Print_btn.Location = new System.Drawing.Point(211, 462);
             this.Print_btn.Name = "Print_btn";
-            this.Print_btn.Size = new System.Drawing.Size(167, 42);
+            this.Print_btn.Size = new System.Drawing.Size(185, 43);
             this.Print_btn.TabIndex = 18;
-            this.Print_btn.Text = "Print";
+            this.Print_btn.Text = "Print Report";
             this.Print_btn.UseVisualStyleBackColor = true;
+            this.Print_btn.Click += new System.EventHandler(this.Print_btn_Click);
             // 
             // label9
             // 
@@ -271,7 +272,7 @@
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(357, -3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(466, 52);
+            this.label1.Size = new System.Drawing.Size(462, 51);
             this.label1.TabIndex = 22;
             this.label1.Text = "Employee Information";
             // 

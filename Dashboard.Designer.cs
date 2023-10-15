@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.Emp_btn = new System.Windows.Forms.Button();
             this.Cust_btn = new System.Windows.Forms.Button();
             this.Supplier_btn = new System.Windows.Forms.Button();
@@ -36,6 +37,9 @@
             this.Payment_btn = new System.Windows.Forms.Button();
             this.Exit_btn = new System.Windows.Forms.Button();
             this.Inventory_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Crystal_btn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Emp_btn
@@ -126,11 +130,35 @@
             this.Inventory_btn.UseVisualStyleBackColor = true;
             this.Inventory_btn.Click += new System.EventHandler(this.Inventory_btn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PharmacyManagementSystem.Properties.Resources.MainLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(426, 110);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(467, 242);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Crystal_btn
+            // 
+            this.Crystal_btn.Location = new System.Drawing.Point(995, 153);
+            this.Crystal_btn.Name = "Crystal_btn";
+            this.Crystal_btn.Size = new System.Drawing.Size(131, 210);
+            this.Crystal_btn.TabIndex = 9;
+            this.Crystal_btn.Text = "Reports";
+            this.Crystal_btn.UseVisualStyleBackColor = true;
+            this.Crystal_btn.Click += new System.EventHandler(this.Crystal_btn_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1178, 552);
+            this.Controls.Add(this.Crystal_btn);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Inventory_btn);
             this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Payment_btn);
@@ -140,7 +168,9 @@
             this.Controls.Add(this.Cust_btn);
             this.Controls.Add(this.Emp_btn);
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -155,5 +185,7 @@
         private System.Windows.Forms.Button Payment_btn;
         private System.Windows.Forms.Button Exit_btn;
         private System.Windows.Forms.Button Inventory_btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Crystal_btn;
     }
 }

@@ -115,6 +115,18 @@ namespace PharmacyManagementSystem
                     }
                 }
             }
+
+            // Remove the trailing " OR "
+            if (!string.IsNullOrEmpty(filter))
+            {
+                filter = filter.Substring(0, filter.Length - 4); // Remove the last " OR "
+            }
+
+            // Apply the combined filter
+            dv.RowFilter = filter;
+
+            DGV_supp.DataSource = dv;
+        }
         }
     }
-}
+ 

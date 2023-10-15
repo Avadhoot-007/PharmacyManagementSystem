@@ -63,5 +63,11 @@ namespace PharmacyManagementSystem
         {
             this.Close();
         }
+
+        private void Crystal_btn_Click(object sender, EventArgs e)
+        {
+            ReportGeneration reportGeneration = new ReportGeneration(); 
+            reportGeneration.Show();
+        }
     }
- }
+}

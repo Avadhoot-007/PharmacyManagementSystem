@@ -37,5 +37,10 @@ namespace PharmacyManagementSystem
             Uname_tb.Text = "";
             Pswd_tb.Text = "";
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

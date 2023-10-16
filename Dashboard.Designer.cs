@@ -205,9 +205,9 @@
             // 
             this.Company_btn.BackColor = System.Drawing.Color.LemonChiffon;
             this.Company_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Company_btn.Location = new System.Drawing.Point(979, 420);
+            this.Company_btn.Location = new System.Drawing.Point(968, 420);
             this.Company_btn.Name = "Company_btn";
-            this.Company_btn.Size = new System.Drawing.Size(191, 66);
+            this.Company_btn.Size = new System.Drawing.Size(225, 66);
             this.Company_btn.TabIndex = 13;
             this.Company_btn.Text = "Company Info";
             this.Company_btn.UseVisualStyleBackColor = false;

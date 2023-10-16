@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace PharmacyManagementSystem
 {
     public partial class Payment : Form
     {
+
         OleDbCommand cmd;
         OleDbConnection conn;
         OleDbDataAdapter adapter;
@@ -38,7 +38,7 @@ namespace PharmacyManagementSystem
         private void Save_btn_Click(object sender, EventArgs e)
         {
             string paymentmode;
-            if (Cash_rbtn.Checked==true) 
+            if (Cash_rbtn.Checked==true)
             {
                 paymentmode="Cash";
             }
@@ -130,7 +130,6 @@ namespace PharmacyManagementSystem
                         }
                     }
                 }
-
                 // Remove the trailing " OR "
                 if (!string.IsNullOrEmpty(filter))
                 {

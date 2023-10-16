@@ -34,56 +34,9 @@ namespace PharmacyManagementSystem
 
         }
 
-        private void Save_btn_Click(object sender, EventArgs e)
-        {
-            string checkQuery = "SELECT COUNT(*) FROM CustomerTb WHERE Cname = @Cname";
-            cmd = new OleDbCommand(checkQuery, conn);
-            cmd.Parameters.AddWithValue("@Cname", Cname_tb.Text);
-            conn.Open();
-
-            int existingCustomerCount = (int)cmd.ExecuteScalar();
-            conn.Close();
-
-            if (existingCustomerCount > 0)
-            {
-                MessageBox.Show("An Customer with the same Name and Mobile No. already exists.");
-            }
-            else
-            {
-                // Insert a new record
-                string insertQuery = "INSERT INTO CustomerTb(Cname, Address, Mobno) VALUES" +
-                    "(@Cname, @address, @mobno)";
-                cmd = new OleDbCommand(insertQuery, conn);
-                cmd.Parameters.AddWithValue("@cname", Cname_tb.Text);
-                cmd.Parameters.AddWithValue("@address", Address_tb.Text);
-                cmd.Parameters.AddWithValue("@mobno", Mobno_tb.Text);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
-
-                MessageBox.Show("Customer Inserted.");
-                GetCustomer();
-            }
-        }
-
         private void Customer_Load(object sender, EventArgs e)
         {
             GetCustomer();
-        }
-
-        private void Reset_btn_Click(object sender, EventArgs e)
-        {
-            Clear();
-        }
-        void Clear()
-        {
-            Custid_tb.Clear();
-            Cname_tb.Clear();
-            Address_tb.Clear();
-            Mobno_tb.Clear();
-            Custid_tb.Focus();
-
         }
 
         private void Search_tb_TextChanged(object sender, EventArgs e)
@@ -123,6 +76,53 @@ namespace PharmacyManagementSystem
             dv.RowFilter = filter;
 
             DGV_cust.DataSource = dv;
+        }
+
+        private void Save_btn_Click(object sender, EventArgs e)
+        {
+            string checkQuery = "SELECT COUNT(*) FROM CustomerTb WHERE Cname = @Cname";
+            cmd = new OleDbCommand(checkQuery, conn);
+            cmd.Parameters.AddWithValue("@Cname", Cname_tb.Text);
+            conn.Open();
+
+            int existingCustomerCount = (int)cmd.ExecuteScalar();
+            conn.Close();
+
+            if (existingCustomerCount > 0)
+            {
+                MessageBox.Show("An Customer with the same Name and Mobile No. already exists.");
+            }
+            else
+            {
+                // Insert a new record
+                string insertQuery = "INSERT INTO CustomerTb(Cname, Address, Mobno) VALUES" +
+                    "(@Cname, @address, @mobno)";
+                cmd = new OleDbCommand(insertQuery, conn);
+                cmd.Parameters.AddWithValue("@cname", Cname_tb.Text);
+                cmd.Parameters.AddWithValue("@address", Address_tb.Text);
+                cmd.Parameters.AddWithValue("@mobno", Mobno_tb.Text);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+                MessageBox.Show("Customer Inserted.");
+                GetCustomer();
+            }
+        }
+
+        private void Reset_btn_Click_1(object sender, EventArgs e)
+        {
+            Clear();
+        }
+        void Clear()
+        {
+            Custid_tb.Clear();
+            Cname_tb.Clear();
+            Address_tb.Clear();
+            Mobno_tb.Clear();
+            Custid_tb.Focus();
+            Search_tb.Clear();
         }
     }
 }

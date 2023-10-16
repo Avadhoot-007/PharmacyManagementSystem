@@ -45,7 +45,6 @@
             this.Insert_btn = new System.Windows.Forms.Button();
             this.Update_btn = new System.Windows.Forms.Button();
             this.Clear_btn = new System.Windows.Forms.Button();
-            this.Print_btn = new System.Windows.Forms.Button();
             this.DGV_inventory = new System.Windows.Forms.DataGridView();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -69,7 +68,7 @@
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
             this.label2.Location = new System.Drawing.Point(372, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(452, 52);
+            this.label2.Size = new System.Drawing.Size(448, 51);
             this.label2.TabIndex = 4;
             this.label2.Text = "Inventory Information";
             // 
@@ -178,7 +177,7 @@
             // Insert_btn
             // 
             this.Insert_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Insert_btn.Location = new System.Drawing.Point(282, 264);
+            this.Insert_btn.Location = new System.Drawing.Point(292, 266);
             this.Insert_btn.Name = "Insert_btn";
             this.Insert_btn.Size = new System.Drawing.Size(137, 50);
             this.Insert_btn.TabIndex = 23;
@@ -189,7 +188,7 @@
             // Update_btn
             // 
             this.Update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update_btn.Location = new System.Drawing.Point(451, 268);
+            this.Update_btn.Location = new System.Drawing.Point(529, 268);
             this.Update_btn.Name = "Update_btn";
             this.Update_btn.Size = new System.Drawing.Size(145, 46);
             this.Update_btn.TabIndex = 24;
@@ -200,7 +199,7 @@
             // Clear_btn
             // 
             this.Clear_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear_btn.Location = new System.Drawing.Point(627, 268);
+            this.Clear_btn.Location = new System.Drawing.Point(759, 270);
             this.Clear_btn.Name = "Clear_btn";
             this.Clear_btn.Size = new System.Drawing.Size(137, 43);
             this.Clear_btn.TabIndex = 25;
@@ -208,25 +207,15 @@
             this.Clear_btn.UseVisualStyleBackColor = true;
             this.Clear_btn.Click += new System.EventHandler(this.Clear_btn_Click);
             // 
-            // Print_btn
-            // 
-            this.Print_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Print_btn.Location = new System.Drawing.Point(788, 268);
-            this.Print_btn.Name = "Print_btn";
-            this.Print_btn.Size = new System.Drawing.Size(139, 43);
-            this.Print_btn.TabIndex = 26;
-            this.Print_btn.Text = "Print";
-            this.Print_btn.UseVisualStyleBackColor = true;
-            // 
             // DGV_inventory
             // 
             this.DGV_inventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV_inventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_inventory.Location = new System.Drawing.Point(247, 338);
+            this.DGV_inventory.Location = new System.Drawing.Point(212, 338);
             this.DGV_inventory.Name = "DGV_inventory";
             this.DGV_inventory.RowHeadersWidth = 51;
             this.DGV_inventory.RowTemplate.Height = 24;
-            this.DGV_inventory.Size = new System.Drawing.Size(707, 237);
+            this.DGV_inventory.Size = new System.Drawing.Size(810, 237);
             this.DGV_inventory.TabIndex = 27;
             this.DGV_inventory.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_inventory_CellEnter);
             // 
@@ -303,7 +292,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DGV_inventory);
-            this.Controls.Add(this.Print_btn);
             this.Controls.Add(this.Clear_btn);
             this.Controls.Add(this.Update_btn);
             this.Controls.Add(this.Insert_btn);
@@ -354,7 +342,6 @@
         private System.Windows.Forms.Button Insert_btn;
         private System.Windows.Forms.Button Update_btn;
         private System.Windows.Forms.Button Clear_btn;
-        private System.Windows.Forms.Button Print_btn;
         private System.Windows.Forms.DataGridView DGV_inventory;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

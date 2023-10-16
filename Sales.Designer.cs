@@ -80,7 +80,7 @@
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
             this.label2.Location = new System.Drawing.Point(391, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(378, 52);
+            this.label2.Size = new System.Drawing.Size(375, 51);
             this.label2.TabIndex = 3;
             this.label2.Text = "Sales Information";
             // 
@@ -271,9 +271,9 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(545, 298);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 29);
+            this.label11.Size = new System.Drawing.Size(102, 29);
             this.label11.TabIndex = 31;
-            this.label11.Text = "Search";
+            this.label11.Text = "Search:";
             // 
             // Search_tb
             // 
@@ -366,7 +366,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(474, 285);
+            this.pictureBox9.Location = new System.Drawing.Point(487, 285);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(52, 42);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

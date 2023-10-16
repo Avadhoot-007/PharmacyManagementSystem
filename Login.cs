@@ -19,7 +19,7 @@ namespace PharmacyManagementSystem
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
-            if (Uname_tb.Text == "admin" || Pswd_tb.Text == "admin")
+            if (Uname_tb.Text == "a" || Pswd_tb.Text == "a")
             {
                 MessageBox.Show("You are logged in successfully..");
                 this.Visible = false;

@@ -47,12 +47,6 @@ namespace PharmacyManagementSystem
             sal.Show();
         }
 
-        private void Payment_btn_Click(object sender, EventArgs e)
-        {
-            Payment pay = new Payment();
-            pay.Show();
-        }
-
         private void Inventory_btn_Click(object sender, EventArgs e)
         {
             Inventory inv = new Inventory();
@@ -68,6 +62,36 @@ namespace PharmacyManagementSystem
         {
             ReportGeneration reportGeneration = new ReportGeneration(); 
             reportGeneration.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Prescription prescription = new Prescription();
+            prescription.Show();
+        }
+
+        private void Physician_btn_Click(object sender, EventArgs e)
+        {
+            Physician physician = new Physician();
+            physician.Show();
+        }
+
+        private void Bill_btn_Click(object sender, EventArgs e)
+        {
+            BillGeneration billGeneration = new BillGeneration();  
+            billGeneration.Show();
+        }
+
+        private void Payment_btn_Click(object sender, EventArgs e)
+        {
+            Payment payment = new Payment();    
+            payment.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Company company = new Company();
+            company.Show();
         }
     }
 }

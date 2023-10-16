@@ -52,6 +52,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillGeneration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillGeneration.Designer.cs">
+      <DependentUpon>BillGeneration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company.Designer.cs">
+      <DependentUpon>Company.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +135,12 @@
       <DependentUpon>Prod.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Recipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipt.Designer.cs">
+      <DependentUpon>Recipt.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportGeneration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +185,12 @@
     <Compile Include="Supplier.Designer.cs">
       <DependentUpon>Supplier.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BillGeneration.resx">
+      <DependentUpon>BillGeneration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company.resx">
+      <DependentUpon>Company.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +244,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Recipt.resx">
+      <DependentUpon>Recipt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration.resx">
       <DependentUpon>ReportGeneration.cs</DependentUpon>
     </EmbeddedResource>

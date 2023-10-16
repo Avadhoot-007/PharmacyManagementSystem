@@ -36,9 +36,9 @@ namespace PharmacyManagementSystem
 
         private void Insert_btn_Click(object sender, EventArgs e)
         {
-            string checkQuery = "SELECT COUNT(*) FROM PrescriptionTb WHERE Pid = @pid";
+            string checkQuery = "SELECT COUNT(*) FROM PrescriptionTb WHERE Pname = @pname";
             cmd = new OleDbCommand(checkQuery, conn);
-            cmd.Parameters.AddWithValue("@pid", Presid_tb.Text);
+            cmd.Parameters.AddWithValue("@pname", Pname_tb.Text);
             conn.Open();
 
             int existingPrescriptionCount = (int)cmd.ExecuteScalar();
@@ -46,7 +46,7 @@ namespace PharmacyManagementSystem
 
             if (existingPrescriptionCount > 0)
             {
-                MessageBox.Show("An Prescription id with the same id already exists.");
+                MessageBox.Show("An Patient with the same name already exists.");
             }
             else
             {
@@ -113,20 +113,21 @@ namespace PharmacyManagementSystem
 
         private void Update_btn_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE PrescriptionTb SET Pmed=@pmed, Dname=@dname, Pname=@pname" +
-           "WHERE Presid=@id";
+            string query = "UPDATE PrescriptionTb SET Pmed=@pmed, Dname=@dname, Pname=@pname " +
+                           "WHERE Presid = @pid";
 
             cmd = new OleDbCommand(query, conn);
             cmd.Parameters.AddWithValue("@pmed", Presmed_tb.Text);
             cmd.Parameters.AddWithValue("@dname", Dname_tb.Text);
             cmd.Parameters.AddWithValue("@pname", Pname_tb.Text);
-            cmd.Parameters.AddWithValue("@id", Convert.ToInt32(Presid_tb.Text));
+            cmd.Parameters.AddWithValue("@pid", Convert.ToInt32(Presid_tb.Text));
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
-            MessageBox.Show("Record Updated .");
+            MessageBox.Show("Record Updated.");
             GetPrescription();
         }
+
 
         private void Clear_btn_Click(object sender, EventArgs e)
         {
@@ -148,6 +149,11 @@ namespace PharmacyManagementSystem
             Presmed_tb.Text = DGV_pres.CurrentRow.Cells[1].Value.ToString();
             Dname_tb.Text = DGV_pres.CurrentRow.Cells[2].Value.ToString();
             Pname_tb.Text = DGV_pres.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void Presid_tb_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

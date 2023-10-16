@@ -46,7 +46,6 @@
             this.Clear_btn = new System.Windows.Forms.Button();
             this.Insert_btn = new System.Windows.Forms.Button();
             this.Update_btn = new System.Windows.Forms.Button();
-            this.Print_btn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.Search_tb = new System.Windows.Forms.TextBox();
             this.DGV_emp = new System.Windows.Forms.DataGridView();
@@ -114,7 +113,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(787, 187);
+            this.label6.Location = new System.Drawing.Point(810, 187);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 36);
             this.label6.TabIndex = 5;
@@ -157,7 +156,7 @@
             // 
             // Address_tb
             // 
-            this.Address_tb.Location = new System.Drawing.Point(714, 139);
+            this.Address_tb.Location = new System.Drawing.Point(705, 139);
             this.Address_tb.Name = "Address_tb";
             this.Address_tb.Size = new System.Drawing.Size(136, 22);
             this.Address_tb.TabIndex = 10;
@@ -166,14 +165,14 @@
             // 
             this.Mobno_tb.Location = new System.Drawing.Point(926, 139);
             this.Mobno_tb.Name = "Mobno_tb";
-            this.Mobno_tb.Size = new System.Drawing.Size(138, 22);
+            this.Mobno_tb.Size = new System.Drawing.Size(149, 22);
             this.Mobno_tb.TabIndex = 11;
             // 
             // Email_tb
             // 
             this.Email_tb.Location = new System.Drawing.Point(793, 242);
             this.Email_tb.Name = "Email_tb";
-            this.Email_tb.Size = new System.Drawing.Size(127, 22);
+            this.Email_tb.Size = new System.Drawing.Size(199, 22);
             this.Email_tb.TabIndex = 12;
             // 
             // Jobrole_tb
@@ -185,15 +184,15 @@
             // 
             // Salary_tb
             // 
-            this.Salary_tb.Location = new System.Drawing.Point(552, 242);
+            this.Salary_tb.Location = new System.Drawing.Point(538, 242);
             this.Salary_tb.Name = "Salary_tb";
-            this.Salary_tb.Size = new System.Drawing.Size(130, 22);
+            this.Salary_tb.Size = new System.Drawing.Size(137, 22);
             this.Salary_tb.TabIndex = 14;
             // 
             // Clear_btn
             // 
             this.Clear_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear_btn.Location = new System.Drawing.Point(23, 463);
+            this.Clear_btn.Location = new System.Drawing.Point(120, 459);
             this.Clear_btn.Name = "Clear_btn";
             this.Clear_btn.Size = new System.Drawing.Size(167, 42);
             this.Clear_btn.TabIndex = 15;
@@ -222,17 +221,6 @@
             this.Update_btn.Text = "Update";
             this.Update_btn.UseVisualStyleBackColor = true;
             this.Update_btn.Click += new System.EventHandler(this.Update_btn_Click);
-            // 
-            // Print_btn
-            // 
-            this.Print_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Print_btn.Location = new System.Drawing.Point(211, 462);
-            this.Print_btn.Name = "Print_btn";
-            this.Print_btn.Size = new System.Drawing.Size(185, 43);
-            this.Print_btn.TabIndex = 18;
-            this.Print_btn.Text = "Print Report";
-            this.Print_btn.UseVisualStyleBackColor = true;
-            this.Print_btn.Click += new System.EventHandler(this.Print_btn_Click);
             // 
             // label9
             // 
@@ -270,7 +258,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(357, -3);
+            this.label1.Location = new System.Drawing.Point(353, -9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(462, 51);
             this.label1.TabIndex = 22;
@@ -374,7 +362,6 @@
             this.Controls.Add(this.DGV_emp);
             this.Controls.Add(this.Search_tb);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.Print_btn);
             this.Controls.Add(this.Update_btn);
             this.Controls.Add(this.Insert_btn);
             this.Controls.Add(this.Clear_btn);
@@ -428,7 +415,6 @@
         private System.Windows.Forms.Button Clear_btn;
         private System.Windows.Forms.Button Insert_btn;
         private System.Windows.Forms.Button Update_btn;
-        private System.Windows.Forms.Button Print_btn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox Search_tb;
         private System.Windows.Forms.DataGridView DGV_emp;

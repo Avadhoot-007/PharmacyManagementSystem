@@ -124,6 +124,7 @@ namespace PharmacyManagementSystem
             Cname_tb.Clear();
             Mname_tb.Clear();
             Mid_tb.Clear();
+            Price_tb.Clear();
             Cid_tb.Focus();
 
         }

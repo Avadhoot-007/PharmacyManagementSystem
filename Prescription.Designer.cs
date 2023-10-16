@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prescription));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Presid_tb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Presmed_tb = new System.Windows.Forms.TextBox();
             this.Dname_tb = new System.Windows.Forms.TextBox();
@@ -43,7 +43,18 @@
             this.DGV_pres = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.Pname_tb = new System.Windows.Forms.TextBox();
+            this.Presid_tb = new System.Windows.Forms.TextBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_pres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +62,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(306, 26);
+            this.label1.Location = new System.Drawing.Point(306, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(537, 51);
             this.label1.TabIndex = 23;
@@ -61,51 +72,41 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 111);
+            this.label2.Location = new System.Drawing.Point(76, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 36);
+            this.label2.Size = new System.Drawing.Size(231, 36);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Prescription Id";
-            // 
-            // Presid_tb
-            // 
-            this.Presid_tb.Enabled = false;
-            this.Presid_tb.Location = new System.Drawing.Point(360, 124);
-            this.Presid_tb.Name = "Presid_tb";
-            this.Presid_tb.Size = new System.Drawing.Size(216, 22);
-            this.Presid_tb.TabIndex = 25;
+            this.label2.Text = "Prescription Id:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 174);
+            this.label3.Location = new System.Drawing.Point(76, 174);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(305, 36);
+            this.label3.Size = new System.Drawing.Size(247, 36);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Prescribed Medicine";
+            this.label3.Text = "Prescribed Med:";
             // 
             // Presmed_tb
             // 
-            this.Presmed_tb.Enabled = false;
-            this.Presmed_tb.Location = new System.Drawing.Point(360, 188);
+            this.Presmed_tb.Location = new System.Drawing.Point(343, 187);
             this.Presmed_tb.Name = "Presmed_tb";
-            this.Presmed_tb.Size = new System.Drawing.Size(216, 22);
+            this.Presmed_tb.Size = new System.Drawing.Size(196, 22);
             this.Presmed_tb.TabIndex = 27;
             // 
             // Dname_tb
             // 
-            this.Dname_tb.Enabled = false;
-            this.Dname_tb.Location = new System.Drawing.Point(360, 268);
+            this.Dname_tb.Location = new System.Drawing.Point(343, 267);
             this.Dname_tb.Name = "Dname_tb";
-            this.Dname_tb.Size = new System.Drawing.Size(216, 22);
+            this.Dname_tb.Size = new System.Drawing.Size(196, 22);
             this.Dname_tb.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 254);
+            this.label4.Location = new System.Drawing.Point(76, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(222, 36);
             this.label4.TabIndex = 29;
@@ -115,15 +116,15 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(29, 396);
+            this.label9.Location = new System.Drawing.Point(68, 432);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 36);
+            this.label9.Size = new System.Drawing.Size(124, 36);
             this.label9.TabIndex = 30;
-            this.label9.Text = "Search";
+            this.label9.Text = "Search:";
             // 
             // Search_tb
             // 
-            this.Search_tb.Location = new System.Drawing.Point(360, 409);
+            this.Search_tb.Location = new System.Drawing.Point(207, 445);
             this.Search_tb.Name = "Search_tb";
             this.Search_tb.Size = new System.Drawing.Size(358, 22);
             this.Search_tb.TabIndex = 31;
@@ -132,7 +133,7 @@
             // Insert_btn
             // 
             this.Insert_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Insert_btn.Location = new System.Drawing.Point(192, 490);
+            this.Insert_btn.Location = new System.Drawing.Point(248, 511);
             this.Insert_btn.Name = "Insert_btn";
             this.Insert_btn.Size = new System.Drawing.Size(167, 50);
             this.Insert_btn.TabIndex = 32;
@@ -143,7 +144,7 @@
             // Update_btn
             // 
             this.Update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update_btn.Location = new System.Drawing.Point(461, 490);
+            this.Update_btn.Location = new System.Drawing.Point(517, 511);
             this.Update_btn.Name = "Update_btn";
             this.Update_btn.Size = new System.Drawing.Size(185, 50);
             this.Update_btn.TabIndex = 33;
@@ -154,7 +155,7 @@
             // Clear_btn
             // 
             this.Clear_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear_btn.Location = new System.Drawing.Point(718, 490);
+            this.Clear_btn.Location = new System.Drawing.Point(774, 511);
             this.Clear_btn.Name = "Clear_btn";
             this.Clear_btn.Size = new System.Drawing.Size(167, 50);
             this.Clear_btn.TabIndex = 34;
@@ -165,11 +166,11 @@
             // DGV_pres
             // 
             this.DGV_pres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_pres.Location = new System.Drawing.Point(742, 100);
+            this.DGV_pres.Location = new System.Drawing.Point(586, 80);
             this.DGV_pres.Name = "DGV_pres";
             this.DGV_pres.RowHeadersWidth = 51;
             this.DGV_pres.RowTemplate.Height = 24;
-            this.DGV_pres.Size = new System.Drawing.Size(377, 288);
+            this.DGV_pres.Size = new System.Drawing.Size(603, 349);
             this.DGV_pres.TabIndex = 35;
             this.DGV_pres.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_pres_CellEnter);
             // 
@@ -177,7 +178,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 319);
+            this.label5.Location = new System.Drawing.Point(76, 319);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(227, 36);
             this.label5.TabIndex = 36;
@@ -185,18 +186,80 @@
             // 
             // Pname_tb
             // 
-            this.Pname_tb.Enabled = false;
-            this.Pname_tb.Location = new System.Drawing.Point(360, 332);
+            this.Pname_tb.Location = new System.Drawing.Point(343, 333);
             this.Pname_tb.Name = "Pname_tb";
-            this.Pname_tb.Size = new System.Drawing.Size(216, 22);
+            this.Pname_tb.Size = new System.Drawing.Size(196, 22);
             this.Pname_tb.TabIndex = 37;
+            // 
+            // Presid_tb
+            // 
+            this.Presid_tb.Location = new System.Drawing.Point(343, 125);
+            this.Presid_tb.Name = "Presid_tb";
+            this.Presid_tb.Size = new System.Drawing.Size(196, 22);
+            this.Presid_tb.TabIndex = 38;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(18, 105);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(52, 42);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 40;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(18, 168);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 42);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(18, 248);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 45;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(18, 312);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 42);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 46;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(10, 426);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(52, 42);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 47;
+            this.pictureBox9.TabStop = false;
             // 
             // Prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1131, 613);
+            this.ClientSize = new System.Drawing.Size(1201, 613);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.Presid_tb);
             this.Controls.Add(this.Pname_tb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.DGV_pres);
@@ -209,13 +272,17 @@
             this.Controls.Add(this.Dname_tb);
             this.Controls.Add(this.Presmed_tb);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Presid_tb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Prescription";
             this.Text = "Prescription";
             this.Load += new System.EventHandler(this.Prescription_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_pres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +292,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Presid_tb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Presmed_tb;
         private System.Windows.Forms.TextBox Dname_tb;
@@ -238,5 +304,11 @@
         private System.Windows.Forms.DataGridView DGV_pres;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Pname_tb;
+        private System.Windows.Forms.TextBox Presid_tb;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
